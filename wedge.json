@@ -1,0 +1,13 @@
+{
+  "name": "alpaca-cpp",
+  "weights": [
+    "https://huggingface.co/Sosaka/Alpaca-native-4bit-ggml/resolve/main/ggml-alpaca-7b-q4.bin"
+  ],
+  "flake": "github:ggerganov/llama.cpp",
+  "setup": "npm --prefix ./server install",
+  "options": {
+    "model": {},
+    "agent": {}
+  },
+  "serve": "node server/server.js"
+}

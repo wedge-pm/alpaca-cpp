@@ -1,0 +1,1 @@
+./result/bin/llama -m ../../weights/alpaca-cpp/ggml-alpaca-7b-q4.bin -f ./alpaca.txt --ctx_size 2048 -n -1 -ins -b 256 --top_k 10000 --temp 0.2 --repeat_penalty 1.1 -t 7
